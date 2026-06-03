@@ -47,7 +47,7 @@
     <!-- Hero / About -->
     <section id="about">
       <div class="hero-eyebrow">ML Engineer · AI Researcher · Kaggle Competitor</div>
-      <h1 class="hero-name">Saad<br /><em>Bin Asad</em></h1>
+      <h1 class="hero-name blur-text">Saad<br /><em>Bin Asad</em></h1>
       <div class="hero-tagline">// University of Sialkot · Pakistan</div>
 
       <div class="hero-bio reveal">
@@ -383,6 +383,116 @@
 
 
 <script>
+  // Blur Text Animation Class
+  class BlurText {
+    constructor(element, options = {}) {
+      this.element = element;
+      this.options = {
+        animateBy: options.animateBy || 'words',
+        direction: options.direction || 'top',
+        delay: options.delay || 150,
+        duration: options.duration || 0.5,
+        threshold: options.threshold || 0.1,
+        rootMargin: options.rootMargin || '0px 0px -40px 0px'
+      };
+
+      this.init();
+    }
+
+    init() {
+      this.element.setAttribute('data-animate-by', this.options.animateBy);
+      if (this.options.direction === 'bottom') {
+        this.element.classList.add('direction-bottom');
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              this.animate();
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: this.options.threshold,
+          rootMargin: this.options.rootMargin
+        }
+      );
+
+      observer.observe(this.element);
+    }
+
+    animate() {
+      const spans = this.element.querySelectorAll('span');
+      spans.forEach((span, index) => {
+        const delay = (index * this.options.delay) / 1000;
+        span.style.animationDelay = delay + 's';
+        span.classList.add('animate');
+      });
+    }
+
+    splitText() {
+      const html = this.element.innerHTML;
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+
+      let text = '';
+      tempDiv.childNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          text += node.textContent;
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          text += node.textContent;
+        }
+      });
+
+      return this.options.animateBy === 'words'
+        ? text.split(/\s+/)
+        : text.split('');
+    }
+  }
+
+  // Initialize blur text animations
+  document.addEventListener('DOMContentLoaded', () => {
+    const blurElements = document.querySelectorAll('.blur-text');
+    blurElements.forEach(el => {
+      const words = el.innerText.trim().split(/\s+/);
+      const html = el.innerHTML;
+
+      // Rebuild HTML with spans around words
+      let newHTML = '';
+      let wordIndex = 0;
+      let i = 0;
+
+      while (i < html.length) {
+        if (html[i] === '<') {
+          // Find end of tag
+          let tagEnd = html.indexOf('>', i);
+          newHTML += html.substring(i, tagEnd + 1);
+          i = tagEnd + 1;
+        } else {
+          // Find word boundary
+          let wordStart = i;
+          while (i < html.length && html[i] !== '<' && html[i] !== ' ' && html[i] !== '\n') {
+            i++;
+          }
+          if (i > wordStart) {
+            newHTML += `<span>${html.substring(wordStart, i)}</span>`;
+          }
+
+          // Add spaces/newlines
+          while (i < html.length && (html[i] === ' ' || html[i] === '\n') && html[i] !== '<') {
+            newHTML += html[i];
+            i++;
+          }
+        }
+      }
+
+      el.innerHTML = newHTML;
+      new BlurText(el, { animateBy: 'words', direction: 'top', delay: 150 });
+    });
+  });
+
   // Theme toggle
   function toggleTheme() {
     const isLight = document.body.classList.toggle('light');
