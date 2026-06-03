@@ -702,11 +702,6 @@
       opacity: 0;
       transform: translateY(-50px);
     }
-    50% {
-      filter: blur(5px);
-      opacity: 0.5;
-      transform: translateY(5px);
-    }
     100% {
       filter: blur(0px);
       opacity: 1;
@@ -719,11 +714,6 @@
       filter: blur(10px);
       opacity: 0;
       transform: translateY(50px);
-    }
-    50% {
-      filter: blur(5px);
-      opacity: 0.5;
-      transform: translateY(-5px);
     }
     100% {
       filter: blur(0px);
@@ -738,11 +728,11 @@
   }
 
   .blur-text span.animate {
-    animation: blurInTop 0.5s ease forwards;
+    animation: blurInTop 0.5s linear forwards;
   }
 
   .blur-text.direction-bottom span.animate {
-    animation: blurInBottom 0.5s ease forwards;
+    animation: blurInBottom 0.5s linear forwards;
   }
 
 /* Light mode */
