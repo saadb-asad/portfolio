@@ -683,6 +683,186 @@
     #about { padding-top: 60px; }
   }
 
+  /* Mobile-specific optimizations */
+  @media (max-width: 640px) {
+    .main, footer { padding: 0 16px; }
+
+    .hero-name {
+      font-size: clamp(36px, 9vw, 52px);
+      margin-bottom: 12px;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      margin-bottom: 16px;
+    }
+
+    .hero-tagline {
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+
+    .hero-bio {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .hero-cta {
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      font-size: 11px;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    #about {
+      padding-top: 50px;
+      padding-bottom: 60px;
+      min-height: auto;
+    }
+
+    .section-label {
+      font-size: 10px;
+      margin-bottom: 24px;
+    }
+
+    .work-item, .edu-item {
+      padding: 20px 0;
+      gap: 4px;
+    }
+
+    .work-company, .edu-degree {
+      font-size: 15px;
+    }
+
+    .work-role {
+      font-size: 12px;
+    }
+
+    .work-bullets li, .edu-detail {
+      font-size: 13px;
+    }
+
+    .project-card {
+      padding: 16px;
+    }
+
+    .project-name {
+      font-size: 14px;
+    }
+
+    .project-desc {
+      font-size: 12px;
+    }
+
+    .skills-block {
+      margin-bottom: 24px;
+    }
+
+    .skills-category {
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+
+    .skill-chip {
+      font-size: 11px;
+      padding: 4px 10px;
+    }
+
+    .achievement-item {
+      padding: 12px 0;
+      gap: 10px;
+    }
+
+    .ach-text {
+      font-size: 13px;
+    }
+
+    .contact-link {
+      padding: 12px 16px;
+    }
+
+    .contact-link-icon {
+      width: 28px;
+      height: 28px;
+      font-size: 11px;
+    }
+
+    .contact-link-val {
+      font-size: 12px;
+    }
+
+    .kaggle-banner {
+      padding: 16px 18px;
+      margin: 24px 0;
+    }
+
+    .kaggle-banner-text {
+      font-size: 12px;
+    }
+
+    footer {
+      flex-direction: column;
+      gap: 12px;
+      padding: 24px 16px;
+    }
+
+    .footer-copy {
+      font-size: 10px;
+    }
+  }
+
+  /* Extra small devices */
+  @media (max-width: 480px) {
+    .main, footer { padding: 0 12px; }
+
+    .hero-name {
+      font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .hero-eyebrow {
+      margin-bottom: 12px;
+    }
+
+    .hero-cta {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .btn {
+      width: 100%;
+      justify-content: center;
+      padding: 10px 16px;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    #about {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .work-item, .edu-item {
+      padding: 16px 0;
+    }
+
+    .project-card {
+      padding: 12px;
+    }
+
+    .contact-grid {
+      gap: 10px;
+    }
+  }
+
   /* Scroll reveal */
   .reveal {
     opacity: 0;
