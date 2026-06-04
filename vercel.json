@@ -1,22 +1,16 @@
 {
-  "buildCommand": "",
-  "outputDirectory": ".",
-  "headers": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "cache-control",
-          "value": "public, max-age=3600, s-maxage=3600"
-        }
-      ]
+      "src": "index.html",
+      "use": "@vercel/static"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
+
 
