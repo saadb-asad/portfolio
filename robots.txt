@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saadbinasad.vercel.app/sitemap.xml
