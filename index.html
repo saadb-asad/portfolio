@@ -1,598 +1,1081 @@
 <!DOCTYPE html>
+<!-- Rebuilt layout: single centred column, sticky header, photo-first hero. -->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saad Bin Asad - ML Engineer & Software Developer</title>
+  <title>Saad Bin Asad - ML Engineer &amp; Software Developer</title>
   <meta name="description"
-    content="Portfolio of Saad Bin Asad (SH4DY) - ML Engineering student, Kaggle competitor, and AI researcher. Projects in LLMs, cognitive benchmarks, and full-stack AI systems." />
+    content="Saad Bin Asad (SH4DY) - Software Engineering student building ML systems, LLM evaluation benchmarks, and full-stack AI products." />
   <meta name="author" content="Saad Bin Asad" />
-  <meta name="keywords" content="Saad Bin Asad, SH4DY, ML Engineer, Machine Learning, AI Researcher, Kaggle, Software Developer, Python, Deep Learning, Generative AI" />
+  <meta name="keywords"
+    content="Saad Bin Asad, SH4DY, ML Engineer, Machine Learning, AI Researcher, LLM Evaluation, Kaggle, Python, Software Developer" />
   <link rel="canonical" href="https://saadbinasad.vercel.app/" />
   <meta name="google-site-verification" content="j_Kq7-vwP9FEKScrTeF2AY4mOk7qB49AiL4bvva82j4" />
+  <meta name="theme-color" content="#0c0c0b" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://saadbinasad.vercel.app/" />
-  <meta property="og:title" content="Saad Bin Asad - ML Engineer & Software Developer" />
-  <meta property="og:description" content="Portfolio of Saad Bin Asad (SH4DY) - ML Engineering student, Kaggle competitor, and AI researcher. Projects in LLMs, cognitive benchmarks, and full-stack AI systems." />
-  <meta property="og:image" content="https://github.com/saadb-asad.png" />
+  <meta property="og:title" content="Saad Bin Asad - ML Engineer &amp; Software Developer" />
+  <meta property="og:description"
+    content="Software Engineering student building ML systems, LLM evaluation benchmarks, and full-stack AI products." />
+  <meta property="og:image" content="https://saadbinasad.vercel.app/avatar.jpeg" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://saadbinasad.vercel.app/" />
-  <meta property="twitter:title" content="Saad Bin Asad - ML Engineer & Software Developer" />
-  <meta property="twitter:description" content="Portfolio of Saad Bin Asad (SH4DY) - ML Engineering student, Kaggle competitor, and AI researcher. Projects in LLMs, cognitive benchmarks, and full-stack AI systems." />
-  <meta property="twitter:image" content="https://github.com/saadb-asad.png" />
+  <meta property="twitter:title" content="Saad Bin Asad - ML Engineer &amp; Software Developer" />
+  <meta property="twitter:description"
+    content="Software Engineering student building ML systems, LLM evaluation benchmarks, and full-stack AI products." />
+  <meta property="twitter:image" content="https://saadbinasad.vercel.app/avatar.jpeg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- Structured data. Helps the name resolve properly in search. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saad Bin Asad",
+    "alternateName": "SH4DY",
+    "url": "https://saadbinasad.vercel.app/",
+    "email": "saadbasad18@gmail.com",
+    "jobTitle": "ML Engineer",
+    "alumniOf": "University of Sialkot",
+    "sameAs": [
+      "https://github.com/saadb-asad",
+      "https://linkedin.com/in/saad-bin-asad",
+      "https://scholar.google.com/citations?user=1huNnuMAAAAJ&hl=en"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-  <div class="layout">
+  <header class="topbar">
+    <a href="#top" class="topbar-brand">
+      Saad Bin Asad
+      <span class="topbar-handle">SH4DY</span>
+    </a>
+    <nav class="topbar-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch colour theme">
+      <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+    </button>
+  </header>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <img src="https://github.com/saadb-asad.png" class="sidebar-avatar" style="object-fit: cover;"
-        alt="Saad Bin Asad" />
-      <div class="sidebar-name">Saad Bin Asad</div>
-      <div class="sidebar-handle">// SH4DY</div>
+  <main id="top">
 
-      <nav>
-        <a href="#about" class="active">About</a>
-        <a href="#work">Work</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#engineering">Engineering</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="avatar.jpeg" class="hero-avatar" alt="Saad Bin Asad" width="112" height="112" />
+      <h1 class="hero-name">Saad Bin Asad</h1>
+      <p class="hero-role">ML engineer, evaluation researcher</p>
+      <p class="hero-pitch">
+        I build systems that test what models actually know, and products that put them to work. Benchmarks,
+        pipelines, and full-stack tools, mostly in Python. I finish things.
+      </p>
 
-      <div class="sidebar-footer">
-        <div class="status-dot">open to roles</div>
-        <div class="sidebar-links">
-          <a href="mailto:saadbasad18@gmail.com">E-mail</a>
-          <a href="https://github.com/saadb-asad" target="_blank">github</a>
-          <a href="https://linkedin.com/in/saad-bin-asad" target="_blank">linkedin</a>
-          <a href="https://scholar.google.com/citations?user=1huNnuMAAAAJ&hl=en" target="_blank">scholar</a>
-        </div>
-        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">☀ light mode</button>
+      <div class="hero-links">
+        <a href="mailto:saadbasad18@gmail.com" class="btn btn-primary">Email me</a>
+        <a href="https://github.com/saadb-asad" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <a href="https://linkedin.com/in/saad-bin-asad" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=1huNnuMAAAAJ&hl=en" target="_blank" rel="noopener"
+          class="btn btn-ghost">Scholar</a>
       </div>
-    </aside>
 
-    <!-- Main -->
-    <main class="main">
+      <p class="hero-status"><span class="status-dot"></span>Open to ML engineering internships and research
+        collaborations</p>
+    </section>
 
-      <!-- Hero / About -->
-      <section id="about">
-        <div class="hero-eyebrow">ML Engineer · AI Researcher · Kaggle Competitor</div>
-        <h1 class="hero-name reveal">Saad<br /><em>Bin Asad</em></h1>
-        <div class="hero-tagline">// University of Sialkot · Pakistan</div>
+    <!-- About -->
+    <section id="about" class="section">
+      <h2 class="section-title">About</h2>
+      <div class="prose">
+        <p>I'm a Software Engineering student at the University of Sialkot in Pakistan, building ML systems alongside
+          coursework rather than waiting until after it. Most of what I know came from shipping something and then
+          finding out what I got wrong.</p>
+        <p>My main interest is evaluation: how you tell whether a model is reasoning or pattern matching. That's the
+          thread running through CognitivePrism, which is where most of my time goes right now. The rest of my work is
+          applied, data pipelines, backends, and AI products that need to survive contact with real users.</p>
+        <p>I care about benchmarks that measure something real, models that do something useful, and code someone else
+          can read six months later.</p>
+      </div>
 
-        <div class="hero-bio reveal">
-          <p>I'm a Software Engineering student specialising in ML systems, building things that sit at the intersection
-            of research and production. My work spans cognitive benchmarks, ensemble pipelines, AR applications, and
-            offline AI tooling.</p>
-          <p>Currently pursuing the <strong>Microsoft AI/ML Professional Certificate</strong> and recently accepted into
-            the <strong>Algoverse AI Research Program</strong>. Active Kaggle competitor with hands-on experience
-            designing evaluation frameworks for frontier models.</p>
-          <p>I care about benchmarks that mean something, models that do something useful, and code that's actually
-            readable.</p>
+      <ul class="capabilities">
+        <li>LLM evaluation</li>
+        <li>Benchmark design</li>
+        <li>Model training</li>
+        <li>Data pipelines</li>
+        <li>Feature engineering</li>
+        <li>Backend APIs</li>
+        <li>Workflow automation</li>
+        <li>Full-stack builds</li>
+      </ul>
+    </section>
+
+    <!-- Featured projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Selected projects</h2>
+
+      <article class="feature">
+        <div class="feature-head">
+          <h3 class="feature-name">CognitivePrism</h3>
+          <span class="badge badge-live">In progress</span>
         </div>
-
-        <div class="hero-cta reveal">
-          <a href="mailto:saadbasad18@gmail.com" class="btn btn-primary">get in touch ↗</a>
-          <a href="https://github.com/saadb-asad" target="_blank" class="btn btn-ghost">github</a>
-          <a href="https://linkedin.com/in/saad-bin-asad" target="_blank" class="btn btn-ghost">linkedin</a>
-          <a href="https://scholar.google.com/citations?user=1huNnuMAAAAJ&hl=en" target="_blank" class="btn btn-ghost">scholar</a>
+        <p class="feature-desc">
+          An adversarial benchmark for testing whether frontier models hold up under epistemic pressure. v2.0 runs 604
+          items across five tracks, invented phonological grammar, epistemic archaeology, adversarial camouflage,
+          constraint lattices, and institutional cognition, scored by seven functions built for the Google DeepMind
+          &times; Kaggle benchmarking competition.
+        </p>
+        <p class="feature-desc">
+          I'm currently expanding coverage to 50+ models, with the goal of submitting to the NeurIPS Evaluations
+          &amp; Datasets track in 2027. Open to working with a research lab on the scale-up.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">LLM evaluation</span>
+          <span class="tag">Benchmark design</span>
+          <span class="tag">NLP</span>
         </div>
-      </section>
-
-      <!-- Work -->
-      <section id="work">
-        <div class="section-label">Work Experience</div>
-
-        <div class="work-item reveal">
-          <div class="work-meta">
-            <div class="work-date">2025 – Present</div>
-            <div class="work-loc">Remote</div>
-            <div class="work-badge">INTERN</div>
-          </div>
-          <div>
-            <div class="work-company">Zidio Development</div>
-            <div class="work-role">// ML Engineering Intern</div>
-            <ul class="work-bullets">
-              <li>Joining as part of an active cohort working on real-world ML engineering tasks and development
-                workflows.</li>
-              <li>Navigated international payment processing constraints to secure the internship position.</li>
-            </ul>
-          </div>
+        <div class="feature-links">
+          <a href="https://github.com/saadb-asad" target="_blank" rel="noopener">GitHub</a>
         </div>
+      </article>
 
-        <div class="work-item reveal">
-          <div class="work-meta">
-            <div class="work-date">2024 – 2025</div>
-            <div class="work-loc">Kaggle</div>
-            <div class="work-badge">COMPETITION</div>
-          </div>
-          <div>
-            <div class="work-company">Kaggle Competitions</div>
-            <div class="work-role">// Independent ML Engineer</div>
-            <ul class="work-bullets">
-              <li>Designed <strong>CognitivePrism v2.0</strong> — a 604-item adversarial cognitive benchmark submitted
-                to the Google DeepMind × Kaggle competition, spanning five tracks including invented phonological
-                language and collective theory of mind tasks.</li>
-              <li>Built a complete NYC Taxi Trip Duration pipeline using LightGBM/XGBoost ensemble with haversine
-                features and KMeans geo-clustering.</li>
-              <li>Benchmark architecture built around "epistemic resilience under adversarial pressure" with Morphic
-                Grammar, Epistemic Archaeology, Adversarial Camouflage, Constraint Lattice, and Institutional Cognition
-                tracks.</li>
-            </ul>
-          </div>
+      <article class="feature">
+        <div class="feature-head">
+          <h3 class="feature-name">Dynamic AI Chatbot</h3>
+          <span class="badge">Zidio</span>
         </div>
-
-        <div class="work-item reveal">
-          <div class="work-meta">
-            <div class="work-date">2024</div>
-            <div class="work-loc">Pakistan</div>
-            <div class="work-badge">RESEARCH</div>
-          </div>
-          <div>
-            <div class="work-company">Algoverse AI Research</div>
-            <div class="work-role">// Accepted Research Participant</div>
-            <ul class="work-bullets">
-              <li>Accepted into a selective AI research program. Applied ML research with focus on model evaluation
-                methodologies and LLM failure modes.</li>
-              <li>Benchmark contamination research background spanning MMLU, HumanEval, and GSM8K.</li>
-            </ul>
-          </div>
+        <p class="feature-desc">
+          A production chatbot built during my internship at Zidio. Flask REST backend with an external LLM, vanilla JS
+          frontend, conversation context that persists across turns, sentiment analysis on incoming messages, and a
+          Chart.js dashboard for usage analytics. Handles English, Hindi, and Hinglish, which meant the language
+          detection had to tolerate code-switching mid-sentence.
+        </p>
+        <div class="tags">
+          <span class="tag">Flask</span>
+          <span class="tag">REST API</span>
+          <span class="tag">LLM API</span>
+          <span class="tag">Chart.js</span>
         </div>
+      </article>
 
-      </section>
-
-      <!-- Education -->
-      <section id="education">
-        <div class="section-label">Education</div>
-
-        <div class="edu-item reveal">
-          <div class="work-meta">
-            <div class="work-date">2022 – 2026</div>
-            <div class="work-loc">Sialkot, PK</div>
-          </div>
-          <div>
-            <div class="edu-school">UNIVERSITY OF SIALKOT</div>
-            <div class="edu-degree">B.Sc. Software Engineering</div>
-            <div class="edu-detail">Focused on AI/ML systems, data structures, and software architecture. Active in ML
-              theory — RNNs, LSTM/GRU, gradient dynamics, and deep learning foundations.</div>
-          </div>
+      <article class="feature">
+        <div class="feature-head">
+          <h3 class="feature-name">Squadwear</h3>
+          <span class="badge badge-live">In progress</span>
         </div>
+        <p class="feature-desc">
+          A full-stack ecommerce platform. React frontend on Cloudflare, Python backend, relational schema on Supabase.
+          Currently working through auth and login latency, which is where most of the interesting problems have been.
+        </p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Python</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Cloudflare</span>
+        </div>
+      </article>
 
-        <div class="edu-item reveal">
-          <div class="work-meta">
-            <div class="work-date">In Progress</div>
-            <div class="work-loc">Online</div>
-          </div>
-          <div>
-            <div class="edu-school">MICROSOFT</div>
-            <div class="edu-degree">AI/ML Professional Certificate</div>
-            <div class="edu-detail">Hands-on certification covering applied machine learning engineering, model
-              deployment, and Azure AI services. Currently in progress.</div>
+      <h3 class="subsection-title">Also built</h3>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-name">Customer Churn Model</div>
+          <p class="project-desc">Classification pipeline predicting churn from customer behaviour data. SQL extraction,
+            pandas cleaning, scikit-learn modelling. Built at Zidio.</p>
+          <div class="tags">
+            <span class="tag">scikit-learn</span>
+            <span class="tag">pandas</span>
+            <span class="tag">SQL</span>
           </div>
         </div>
 
-      </section>
-
-      <!-- Projects -->
-      <section id="projects">
-        <div class="section-label">Projects</div>
-
-        <div class="projects-grid">
-
-          <div class="project-card reveal">
-            <div class="project-name">CognitivePrism v2.0</div>
-            <div class="project-desc">604-item adversarial cognitive benchmark for Google DeepMind × Kaggle. Tests
-              epistemic resilience across invented language, math paradigm shifts, and collective theory of mind.</div>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">NLP</span>
-              <span class="tag">Benchmarking</span>
-              <span class="tag">LLM Evaluation</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/saadb-asad" target="_blank">GitHub ↗</a>
-            </div>
+        <div class="project-card">
+          <div class="project-name">NYC Taxi Pipeline</div>
+          <p class="project-desc">LightGBM and XGBoost ensemble for trip duration prediction, with haversine distance
+            features, KMeans geo-clustering, and cyclic time encoding.</p>
+          <div class="tags">
+            <span class="tag">LightGBM</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Kaggle</span>
           </div>
-
-          <div class="project-card reveal">
-            <div class="project-name">NYC Taxi Pipeline</div>
-            <div class="project-desc">LightGBM/XGBoost ensemble for trip duration prediction. Features haversine
-              distance calculations, KMeans geo-cluster features, and thorough EDA.</div>
-            <div class="project-tags">
-              <span class="tag">LightGBM</span>
-              <span class="tag">XGBoost</span>
-              <span class="tag">Scikit-learn</span>
-              <span class="tag">Kaggle</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/saadb-asad" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-
-          <div class="project-card reveal">
-            <div class="project-name">Omnicheck / Antigravity</div>
-            <div class="project-desc">Offline AI coding assistant powered by Google Gemini. Runs locally without
-              internet dependency — designed for restricted or air-gapped dev environments.</div>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Gemini API</span>
-              <span class="tag">Offline AI</span>
-              <span class="tag">CLI Tool</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/saadb-asad" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-
-          <div class="project-card reveal">
-            <div class="project-name">nazARa</div>
-            <div class="project-desc">Augmented reality application built in C++ with a Supabase backend. Clean
-              class-based OOP architecture with real-time database sync.</div>
-            <div class="project-tags">
-              <span class="tag">C++</span>
-              <span class="tag">Supabase</span>
-              <span class="tag">AR</span>
-              <span class="tag">OOP</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/saadb-asad" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-
-          <div class="project-card reveal">
-            <div class="project-name">Automated CRM System</div>
-            <div class="project-desc">Full-stack CRM pipeline built with Python, T-SQL, and Azure Data Studio. Automated
-              data workflows and reporting for operational use.</div>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">T-SQL</span>
-              <span class="tag">Azure</span>
-              <span class="tag">Data Studio</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/saadb-asad" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-
-          <div class="project-card reveal">
-            <div class="project-name">EdTech Market Report</div>
-            <div class="project-desc">Deep research report on Pakistan's EdTech landscape. Covers competitors (Maqsad,
-              Taleem360, Edkasa) and 13 original content strategy ideas.</div>
-            <div class="project-tags">
-              <span class="tag">Research</span>
-              <span class="tag">Pakistan</span>
-              <span class="tag">EdTech</span>
-              <span class="tag">Strategy</span>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="kaggle-banner reveal">
-          <div class="kaggle-banner-label">Kaggle · Active Competitor</div>
-          <div class="kaggle-banner-text">Actively competing in ML challenges — building pipelines that combine feature
-            engineering rigour with modern ensemble methods. CognitivePrism v2.0 is the most complex project to date: a
-            benchmark designed to stress-test frontier LLMs in ways standard evals miss.</div>
-        </div>
-
-      </section>
-
-      <!-- Engineering / Skills -->
-      <section id="engineering">
-        <div class="section-label">Engineering</div>
-
-        <div class="skills-block reveal">
-          <div class="skills-category">Languages</div>
-          <div class="skills-list">
-            <span class="skill-chip">Python</span>
-            <span class="skill-chip">C++</span>
-            <span class="skill-chip">T-SQL</span>
-            <span class="skill-chip">JavaScript</span>
-            <span class="skill-chip">HTML / CSS</span>
+          <div class="project-links"><a href="https://github.com/saadb-asad" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
 
-        <div class="skills-block reveal">
-          <div class="skills-category">Machine Learning</div>
-          <div class="skills-list">
-            <span class="skill-chip">scikit-learn</span>
-            <span class="skill-chip">LightGBM</span>
-            <span class="skill-chip">XGBoost</span>
-            <span class="skill-chip">NumPy</span>
-            <span class="skill-chip">Pandas</span>
-            <span class="skill-chip">PyTorch</span>
-            <span class="skill-chip">RNN / LSTM / GRU</span>
-            <span class="skill-chip">NLP</span>
-            <span class="skill-chip">LLM Evaluation</span>
-            <span class="skill-chip">RAG Systems</span>
+        <div class="project-card">
+          <div class="project-name">Lead Qualification System</div>
+          <p class="project-desc">Scores B2B leads by conversion likelihood using a self-hosted open-weight LLM,
+            orchestrated in n8n. Owners get a plain-language summary of where each lead stands, not a raw score.</p>
+          <div class="tags">
+            <span class="tag">n8n</span>
+            <span class="tag">Open-weight LLM</span>
+            <span class="tag">Automation</span>
           </div>
         </div>
 
-        <div class="skills-block reveal">
-          <div class="skills-category">Infrastructure & Tools</div>
-          <div class="skills-list">
-            <span class="skill-chip">Azure Data Studio</span>
-            <span class="skill-chip">Supabase</span>
-            <span class="skill-chip">Google Gemini API</span>
-            <span class="skill-chip">Git</span>
-            <span class="skill-chip">Kaggle</span>
-            <span class="skill-chip">VS Code</span>
+        <div class="project-card">
+          <div class="project-name">Omnicheck / Antigravity</div>
+          <p class="project-desc">Offline AI coding assistant built on Google Gemini, for restricted or air-gapped
+            development environments where a hosted IDE assistant is not an option.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Gemini API</span>
+            <span class="tag">CLI</span>
+          </div>
+          <div class="project-links"><a href="https://github.com/saadb-asad" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
 
-        <div class="skills-block reveal">
-          <div class="skills-category">Currently Studying</div>
-          <div class="skills-list">
-            <span class="skill-chip">Microsoft AI/ML Certificate</span>
-            <span class="skill-chip">Transformer Architecture</span>
-            <span class="skill-chip">DSA (Systematic)</span>
-            <span class="skill-chip">Algoverse Research</span>
+        <div class="project-card">
+          <div class="project-name">nazARa</div>
+          <p class="project-desc">Real-time augmented reality backend on Supabase, with class-based architecture and
+            live database sync between clients.</p>
+          <div class="tags">
+            <span class="tag">C++</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">AR</span>
+          </div>
+          <div class="project-links"><a href="https://github.com/saadb-asad" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
 
-        <!-- Achievements -->
-        <div style="margin-top: 48px;">
-          <div class="section-label" style="margin-bottom: 20px;">Achievements</div>
-
-          <div class="achievement-item reveal">
-            <div class="ach-icon">★</div>
-            <div class="ach-text">Accepted into the <strong>Algoverse AI Research Program</strong> — a selective cohort
-              for applied AI/ML research.</div>
+        <div class="project-card">
+          <div class="project-name">Campus Navigator</div>
+          <p class="project-desc">Graph-based pathfinding across a multi-floor campus in C++. Dijkstra for shortest
+            routes, BFS for floor search, and fuzzy matching so misspelled room names still resolve.</p>
+          <div class="tags">
+            <span class="tag">C++</span>
+            <span class="tag">Dijkstra</span>
+            <span class="tag">Graphs</span>
           </div>
-
-          <div class="achievement-item reveal">
-            <div class="ach-icon">★</div>
-            <div class="ach-text">Designed <strong>CognitivePrism v2.0</strong>, a 604-item adversarial benchmark
-              submitted to the Google DeepMind × Kaggle LLM evaluation competition.</div>
-          </div>
-
-          <div class="achievement-item reveal">
-            <div class="ach-icon">★</div>
-            <div class="ach-text">Built a competitive ML pipeline for the Kaggle NYC Taxi Trip Duration challenge using
-              LightGBM/XGBoost ensembles with geo-clustering features.</div>
-          </div>
-
-          <div class="achievement-item reveal">
-            <div class="ach-icon">★</div>
-            <div class="ach-text">Developed nazARa — an augmented reality application in C++ with real-time Supabase
-              backend integration.</div>
+          <div class="project-links"><a href="https://github.com/saadb-asad" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
 
-      </section>
-
-      <!-- Contact -->
-      <section id="contact">
-        <div class="section-label">Get in Touch</div>
-
-        <p class="hero-bio reveal" style="margin-bottom: 32px;">I'm actively looking for ML engineering internships,
-          research roles, and interesting collaborations. If you're working on something worth thinking about, reach
-          out.</p>
-
-        <div class="contact-grid reveal">
-          <a href="mailto:saadbasad18@gmail.com" class="contact-link">
-            <div class="contact-link-icon">@</div>
-            <div class="contact-link-text">
-              <span class="contact-link-label">Email</span>
-              <span class="contact-link-val">saadbasad18@gmail.com</span>
-            </div>
-          </a>
-          <a href="https://github.com/saadb-asad" target="_blank" class="contact-link">
-            <div class="contact-link-icon">&lt;/&gt;</div>
-            <div class="contact-link-text">
-              <span class="contact-link-label">GitHub</span>
-              <span class="contact-link-val">github.com/saadb-asad</span>
-            </div>
-          </a>
-          <a href="https://linkedin.com/in/saad-bin-asad" target="_blank" class="contact-link">
-            <div class="contact-link-icon">in</div>
-            <div class="contact-link-text">
-              <span class="contact-link-label">LinkedIn</span>
-              <span class="contact-link-val">saad-bin-asad</span>
-            </div>
-          </a>
-          <a href="https://scholar.google.com/citations?user=1huNnuMAAAAJ&hl=en" target="_blank" class="contact-link">
-            <div class="contact-link-icon">gs</div>
-            <div class="contact-link-text">
-              <span class="contact-link-label">Google Scholar</span>
-              <span class="contact-link-val">Saad Bin Asad</span>
-            </div>
-          </a>
-
-          <div class="contact-link">
-            <div class="contact-link-icon">#</div>
-            <div class="contact-link-text">
-              <span class="contact-link-label">Phone</span>
-              <span class="contact-link-val">+92-328-6159076</span>
-            </div>
+        <div class="project-card">
+          <div class="project-name">Automated CRM</div>
+          <p class="project-desc">CRM data pipeline in Python and T-SQL with automated reporting, built and queried
+            through Azure Data Studio.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">T-SQL</span>
+            <span class="tag">Azure</span>
           </div>
-
-          <a href="https://www.kaggle.com" target="_blank" class="contact-link">
-            <div class="contact-link-icon">K</div>
-            <div class="contact-link-text">
-              <span class="contact-link-label">Kaggle</span>
-              <span class="contact-link-val">Active Competitor</span>
-            </div>
-          </a>
         </div>
-      </section>
 
+        <div class="project-card">
+          <div class="project-name">4-bit Ripple Carry Adder</div>
+          <p class="project-desc">Discrete 74HC-series logic build with an ESP32 verification layer that checks every
+            input combination against expected output. Documented with full circuit diagrams.</p>
+          <div class="tags">
+            <span class="tag">Digital logic</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">Hardware</span>
+          </div>
+        </div>
 
-    </main>
-  </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+
+      <article class="entry">
+        <div class="entry-meta">
+          <span class="entry-date">May &ndash; Jul 2026</span>
+          <span class="entry-loc">Remote</span>
+        </div>
+        <div class="entry-body">
+          <h3 class="entry-title">Zidio Development Pvt. Ltd.</h3>
+          <p class="entry-sub">Data Science &amp; Analytics Intern &middot; Bengaluru</p>
+          <ul class="entry-bullets">
+            <li>Built a customer churn prediction model end to end, from SQL extraction and pandas cleaning through
+              exploratory analysis to a scikit-learn classifier.</li>
+            <li>Shipped a dynamic AI chatbot with a Flask REST backend, persistent conversation context, sentiment
+              analysis, multilingual support, and an analytics dashboard.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-meta">
+          <span class="entry-date">2024 &ndash; now</span>
+          <span class="entry-loc">Independent</span>
+        </div>
+        <div class="entry-body">
+          <h3 class="entry-title">Independent ML work</h3>
+          <p class="entry-sub">Benchmarks and competition pipelines</p>
+          <ul class="entry-bullets">
+            <li>Designing CognitivePrism, a 604-item adversarial benchmark for the Google DeepMind &times; Kaggle
+              competition, now being expanded toward a NeurIPS Evaluations &amp; Datasets submission.</li>
+            <li>Competing on Kaggle with gradient-boosted ensembles and heavy feature engineering.</li>
+          </ul>
+        </div>
+      </article>
+
+      <h3 class="subsection-title">Education</h3>
+
+      <article class="entry">
+        <div class="entry-meta">
+          <span class="entry-date">2024 &ndash; 2028</span>
+          <span class="entry-loc">Sialkot, PK</span>
+        </div>
+        <div class="entry-body">
+          <h3 class="entry-title">University of Sialkot</h3>
+          <p class="entry-sub">BS Software Engineering, expected Fall 2028</p>
+          <p class="entry-detail">Coursework in AI and ML systems, data structures and algorithms, digital logic, and
+            software architecture.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-meta">
+          <span class="entry-date">Completed</span>
+          <span class="entry-loc">Online</span>
+        </div>
+        <div class="entry-body">
+          <h3 class="entry-title">Microsoft</h3>
+          <p class="entry-sub">AI/ML Professional Certificate</p>
+          <p class="entry-detail">Applied machine learning engineering, model deployment, and Azure AI services.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack" class="section">
+      <h2 class="section-title">Stack</h2>
+
+      <div class="stack-row">
+        <div class="stack-label">Languages</div>
+        <div class="stack-items">
+          <span class="chip">Python</span>
+          <span class="chip">C++</span>
+          <span class="chip">SQL / T-SQL</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML / CSS</span>
+        </div>
+      </div>
+
+      <div class="stack-row">
+        <div class="stack-label">ML &amp; data</div>
+        <div class="stack-items">
+          <span class="chip">scikit-learn</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">LightGBM</span>
+          <span class="chip">XGBoost</span>
+          <span class="chip">pandas</span>
+          <span class="chip">NumPy</span>
+          <span class="chip">RNN / LSTM / GRU</span>
+          <span class="chip">NLP</span>
+        </div>
+      </div>
+
+      <div class="stack-row">
+        <div class="stack-label">Backend &amp; web</div>
+        <div class="stack-items">
+          <span class="chip">Flask</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">React</span>
+          <span class="chip">Supabase</span>
+          <span class="chip">Cloudflare</span>
+        </div>
+      </div>
+
+      <div class="stack-row">
+        <div class="stack-label">Tooling</div>
+        <div class="stack-items">
+          <span class="chip">Git</span>
+          <span class="chip">n8n</span>
+          <span class="chip">Azure Data Studio</span>
+          <span class="chip">Gemini API</span>
+          <span class="chip">Kaggle</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="prose contact-intro">I'm looking for ML engineering internships, research collaborations, and people
+        working on evaluation. If you're building something worth thinking about, send me a note.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:saadbasad18@gmail.com" class="contact-link">
+          <span class="contact-label">Email</span>
+          <span class="contact-val">saadbasad18@gmail.com</span>
+        </a>
+        <a href="https://github.com/saadb-asad" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-val">saadb-asad</span>
+        </a>
+        <a href="https://linkedin.com/in/saad-bin-asad" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-val">saad-bin-asad</span>
+        </a>
+        <a href="https://scholar.google.com/citations?user=1huNnuMAAAAJ&hl=en" target="_blank" rel="noopener"
+          class="contact-link">
+          <span class="contact-label">Google Scholar</span>
+          <span class="contact-val">Saad Bin Asad</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <div class="footer-copy">© 2026 Saad Bin Asad · All Rights Reserved</div>
-    <div class="footer-copy">Built with passion · <code>SH4DY</code></div>
+    <span>&copy; 2026 Saad Bin Asad</span>
+    <span>Built by hand &middot; <code>SH4DY</code></span>
   </footer>
 
-
-
   <script>
-    // Blur Text Animation Class
-    class BlurText {
-      constructor(element, options = {}) {
-        this.element = element;
-        this.options = {
-          animateBy: options.animateBy || 'words',
-          direction: options.direction || 'top',
-          delay: options.delay || 150,
-          duration: options.duration || 0.5,
-          threshold: options.threshold || 0.1,
-          rootMargin: options.rootMargin || '0px 0px -40px 0px'
-        };
+    // Theme toggle. Remembers the choice so it survives a reload.
+    const themeBtn = document.getElementById('theme-toggle');
 
-        this.init();
-      }
-
-      init() {
-        this.element.setAttribute('data-animate-by', this.options.animateBy);
-        if (this.options.direction === 'bottom') {
-          this.element.classList.add('direction-bottom');
-        }
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                this.animate();
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          {
-            threshold: this.options.threshold,
-            rootMargin: this.options.rootMargin
-          }
-        );
-
-        observer.observe(this.element);
-      }
-
-      animate() {
-        const spans = this.element.querySelectorAll('span');
-        spans.forEach((span, index) => {
-          const delay = (index * this.options.delay) / 1000;
-          span.style.animationDelay = delay + 's';
-          span.classList.add('animate');
-        });
-      }
-
-      splitText() {
-        const html = this.element.innerHTML;
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = html;
-
-        let text = '';
-        tempDiv.childNodes.forEach(node => {
-          if (node.nodeType === Node.TEXT_NODE) {
-            text += node.textContent;
-          } else if (node.nodeType === Node.ELEMENT_NODE) {
-            text += node.textContent;
-          }
-        });
-
-        return this.options.animateBy === 'words'
-          ? text.split(/\s+/)
-          : text.split('');
-      }
+    function applyTheme(mode) {
+      document.body.classList.toggle('light', mode === 'light');
+      themeBtn.setAttribute('aria-label', mode === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
     }
 
-    // Initialize blur text animations
-    document.addEventListener('DOMContentLoaded', () => {
-      const blurElements = document.querySelectorAll('.blur-text');
-      blurElements.forEach(el => {
-        const words = el.innerText.trim().split(/\s+/);
-        const html = el.innerHTML;
-
-        // Rebuild HTML with spans around words
-        let newHTML = '';
-        let wordIndex = 0;
-        let i = 0;
-
-        while (i < html.length) {
-          if (html[i] === '<') {
-            // Find end of tag
-            let tagEnd = html.indexOf('>', i);
-            newHTML += html.substring(i, tagEnd + 1);
-            i = tagEnd + 1;
-          } else {
-            // Find word boundary
-            let wordStart = i;
-            while (i < html.length && html[i] !== '<' && html[i] !== ' ' && html[i] !== '\n') {
-              i++;
-            }
-            if (i > wordStart) {
-              newHTML += `<span>${html.substring(wordStart, i)}</span>`;
-            }
-
-            // Add spaces/newlines
-            while (i < html.length && (html[i] === ' ' || html[i] === '\n') && html[i] !== '<') {
-              newHTML += html[i];
-              i++;
-            }
-          }
-        }
-
-        el.innerHTML = newHTML;
-        new BlurText(el, { animateBy: 'words', direction: 'top', delay: 150 });
-      });
-    });
-
-    // Theme toggle
-    function toggleTheme() {
-      const isLight = document.body.classList.toggle('light');
-      document.getElementById('theme-toggle').textContent = isLight ? '☾ dark mode' : '☀ light mode';
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved) applyTheme(saved);
+    } catch (err) {
+      // Private browsing can throw here. Not worth breaking the page over.
+      console.log('theme restore skipped:', err);
     }
 
-    // Active nav on scroll
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('nav a');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          navLinks.forEach(a => {
-            a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
-          });
-        }
-      });
-    }, { threshold: 0.3 });
-
-    sections.forEach(s => observer.observe(s));
-
-    // Reveal on scroll
-    const revealEls = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          revealObserver.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-    revealEls.forEach(el => revealObserver.observe(el));
-
-    // Stagger reveal children in sections
-    document.querySelectorAll('.reveal').forEach((el, i) => {
-      el.style.transitionDelay = (i % 4) * 60 + 'ms';
+    themeBtn.addEventListener('click', () => {
+      const nowLight = !document.body.classList.contains('light');
+      applyTheme(nowLight ? 'light' : 'dark');
+      try {
+        localStorage.setItem('theme', nowLight ? 'light' : 'dark');
+      } catch (err) {
+        console.log('theme save skipped:', err);
+      }
     });
+
+    // Highlight the nav link for whichever section is currently in view.
+    const sections = document.querySelectorAll('main section[id]');
+    const navLinks = document.querySelectorAll('.topbar-nav a');
+
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        navLinks.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
+        });
+      });
+    }, { threshold: 0.25, rootMargin: '-80px 0px -40% 0px' });
+
+    sections.forEach(s => navObserver.observe(s));
+
+    // One-time entrance on the hero only. Everything below stays still on scroll.
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion) {
+      document.querySelector('.hero').classList.add('enter');
+    }
+
+    // TODO: swap the placeholder GitHub links for real repo URLs once each one is public.
+    // TODO: add project screenshots to the feature cards.
   </script>
 </body>
 
 </html>
+
+/* Centred single-column layout. Dark by default, light theme via body.light. */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0c0c0b;
+  --bg-raised: #131312;
+  --surface: #181816;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #e8e6df;
+  --text-dim: #a3a099;
+  --muted: #78756d;
+  --accent: #b5e0c8;
+  --accent-deep: #4caf7d;
+  --amber: #d4a24c;
+
+  --serif: 'DM Serif Display', Georgia, serif;
+  --mono: 'DM Mono', 'Courier New', monospace;
+  --sans: 'Instrument Sans', system-ui, sans-serif;
+
+  --measure: 720px;
+  --gutter: 24px;
+}
+
+body.light {
+  --bg: #f7f6f1;
+  --bg-raised: #ffffff;
+  --surface: #efede6;
+  --border: rgba(0, 0, 0, 0.10);
+  --border-strong: rgba(0, 0, 0, 0.18);
+  --text: #1b1b19;
+  --text-dim: #4a4842;
+  --muted: #77746c;
+  --accent: #2f7f57;
+  --accent-deep: #2f7f57;
+  --amber: #9a6f1e;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 15.5px;
+  line-height: 1.7;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ---------- Top bar ---------- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px var(--gutter);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar-brand {
+  font-family: var(--serif);
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-right: auto;
+}
+
+.topbar-handle {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--accent-deep);
+  letter-spacing: 0.09em;
+}
+
+.topbar-nav { display: flex; gap: 4px; }
+
+.topbar-nav a {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.topbar-nav a:hover { color: var(--text); }
+
+.topbar-nav a.active {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent-deep) 12%, transparent);
+}
+
+.theme-toggle {
+  font-size: 15px;
+  line-height: 1;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 7px 9px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.theme-toggle:hover { color: var(--accent); border-color: var(--border-strong); }
+
+/* ---------- Shell ---------- */
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.section {
+  padding: 60px 0;
+  border-top: 1px solid var(--border);
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  margin-bottom: 28px;
+}
+
+.subsection-title {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--muted);
+  margin: 48px 0 20px;
+}
+
+.prose p { color: var(--text-dim); margin-bottom: 16px; max-width: 66ch; }
+.prose p:last-child { margin-bottom: 0; }
+
+/* ---------- Hero ---------- */
+
+.hero {
+  padding: 72px 0 60px;
+  text-align: center;
+}
+
+.hero-avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-strong);
+  margin-bottom: 26px;
+}
+
+.hero-name {
+  font-family: var(--serif);
+  font-size: clamp(38px, 8vw, 58px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin-bottom: 10px;
+}
+
+.hero-role {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  margin-bottom: 22px;
+}
+
+.hero-pitch {
+  color: var(--text-dim);
+  max-width: 54ch;
+  margin: 0 auto 30px;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-size: 13.5px;
+  text-decoration: none;
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+  color: #08120d;
+  font-weight: 500;
+}
+
+body.light .btn-primary { color: #ffffff; }
+.btn-primary:hover { filter: brightness(1.08); }
+
+.btn-ghost { color: var(--text-dim); background: var(--surface); }
+.btn-ghost:hover { color: var(--text); border-color: var(--border-strong); }
+
+.hero-status {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-deep);
+  box-shadow: 0 0 6px var(--accent-deep);
+  flex-shrink: 0;
+}
+
+/* One orchestrated entrance, hero only. */
+.hero.enter > * {
+  animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) backwards;
+}
+.hero.enter > *:nth-child(1) { animation-delay: 0.02s; }
+.hero.enter > *:nth-child(2) { animation-delay: 0.09s; }
+.hero.enter > *:nth-child(3) { animation-delay: 0.16s; }
+.hero.enter > *:nth-child(4) { animation-delay: 0.23s; }
+.hero.enter > *:nth-child(5) { animation-delay: 0.30s; }
+.hero.enter > *:nth-child(6) { animation-delay: 0.37s; }
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ---------- Capabilities ---------- */
+
+.capabilities {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.capabilities li {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+/* ---------- Featured project ---------- */
+
+.feature {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 26px;
+  margin-bottom: 16px;
+}
+
+.feature-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.feature-name {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.badge {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  padding: 3px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.badge-live {
+  color: var(--amber);
+  border-color: color-mix(in srgb, var(--amber) 40%, transparent);
+  background: color-mix(in srgb, var(--amber) 10%, transparent);
+}
+
+.feature-desc {
+  color: var(--text-dim);
+  margin-bottom: 14px;
+  max-width: 66ch;
+}
+
+.feature-links { margin-top: 16px; display: flex; gap: 16px; }
+
+.feature-links a,
+.project-links a {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-deep) 40%, transparent);
+  padding-bottom: 1px;
+}
+
+.feature-links a:hover,
+.project-links a:hover { border-bottom-color: var(--accent); }
+
+/* ---------- Tags ---------- */
+
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.tag {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--muted);
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+/* ---------- Project grid ---------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.project-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-name {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.project-links { margin-top: 2px; }
+
+/* ---------- Experience entries ---------- */
+
+.entry {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.entry:last-of-type { border-bottom: none; }
+
+.entry-meta { display: flex; flex-direction: column; gap: 3px; }
+
+.entry-date {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.entry-loc {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.entry-title {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.entry-sub {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+  margin: 4px 0 10px;
+}
+
+.entry-bullets { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+
+.entry-bullets li {
+  font-size: 14.5px;
+  color: var(--text-dim);
+  padding-left: 16px;
+  position: relative;
+  max-width: 62ch;
+}
+
+.entry-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 5px;
+  height: 1px;
+  background: var(--accent-deep);
+}
+
+.entry-detail {
+  font-size: 14.5px;
+  color: var(--text-dim);
+  max-width: 62ch;
+}
+
+/* ---------- Stack ---------- */
+
+.stack-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.stack-row:last-child { border-bottom: none; }
+
+.stack-label {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  padding-top: 3px;
+}
+
+.stack-items { display: flex; flex-wrap: wrap; gap: 7px; }
+
+.chip {
+  font-size: 13px;
+  color: var(--text-dim);
+  padding: 4px 11px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+}
+
+/* ---------- Contact ---------- */
+
+.contact-intro { margin-bottom: 28px; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 16px 18px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+.contact-link:hover { border-color: var(--border-strong); }
+
+.contact-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+.contact-val { font-size: 14px; color: var(--text); word-break: break-word; }
+
+/* ---------- Footer ---------- */
+
+footer {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 28px var(--gutter) 44px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+footer code { color: var(--accent-deep); }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 700px) {
+  .topbar-nav { display: none; }
+  .topbar { padding: 12px 18px; }
+
+  .hero { padding: 52px 0 44px; }
+  .section { padding: 46px 0; }
+
+  .projects-grid,
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .entry,
+  .stack-row { grid-template-columns: 1fr; gap: 10px; }
+
+  .entry-meta { flex-direction: row; gap: 10px; align-items: baseline; }
+
+  .feature { padding: 20px; }
+  .feature-name { font-size: 21px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+User-agent: *
+Allow: /
+
+Sitemap: https://saadbinasad.vercel.app/sitemap.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://saadbinasad.vercel.app/</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
