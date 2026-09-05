@@ -488,11 +488,29 @@
 
     sections.forEach(s => navObserver.observe(s));
 
-    // One-time entrance on the hero only. Everything below stays still on scroll.
+    // One-time entrance on the hero.
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!reduceMotion) {
       document.querySelector('.hero').classList.add('enter');
     }
+
+    // Projects slide in as you scroll, alternating left and right down the column.
+    // Classes get added from JS so the cards are still visible if JS never runs.
+    const projectItems = document.querySelectorAll('#projects .feature, #projects .project-card');
+
+    projectItems.forEach((el, i) => {
+      el.classList.add(i % 2 === 0 ? 'slide-l' : 'slide-r');
+    });
+
+    const slideObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('is-in');
+        slideObserver.unobserve(e.target); // one shot, don't re-animate on scroll back up
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+    projectItems.forEach(el => slideObserver.observe(el));
 
     // TODO: swap the placeholder GitHub links for real repo URLs once each one is public.
     // TODO: add project screenshots to the feature cards.
