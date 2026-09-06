@@ -24,17 +24,17 @@
 }
 
 body.light {
-  --bg: #f7f6f1;
+  --bg: #f4f2ec;          /* a touch deeper so white cards actually read as raised */
   --bg-raised: #ffffff;
-  --surface: #efede6;
-  --border: rgba(0, 0, 0, 0.10);
-  --border-strong: rgba(0, 0, 0, 0.18);
-  --text: #1b1b19;
-  --text-dim: #4a4842;
-  --muted: #77746c;
-  --accent: #2f7f57;
-  --accent-deep: #2f7f57;
-  --amber: #9a6f1e;
+  --surface: #eae7de;
+  --border: rgba(28, 25, 20, 0.14);
+  --border-strong: rgba(28, 25, 20, 0.26);
+  --text: #171613;
+  --text-dim: #403e38;    /* darker than the dark-mode equivalent. light bg needs more contrast, not less */
+  --muted: #6a675f;
+  --accent: #1f6b46;
+  --accent-deep: #1f6b46;
+  --amber: #8a5a11;
 }
 
 html { scroll-behavior: smooth; }
@@ -337,6 +337,7 @@ body.light .btn-primary { color: #ffffff; }
   border-radius: 12px;
   padding: 26px;
   margin-bottom: 16px;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .feature-head {
@@ -421,6 +422,7 @@ body.light .btn-primary { color: #ffffff; }
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .project-name {
@@ -604,6 +606,50 @@ footer {
 }
 
 footer code { color: var(--accent-deep); }
+
+/* ---------- Light mode depth ----------
+   In dark mode a card lifts by being lighter than the page. That trick is
+   unavailable on a light background, so use shadow instead. */
+
+body.light .feature,
+body.light .project-card,
+body.light .contact-link {
+  box-shadow: 0 1px 2px rgba(28, 25, 20, 0.05), 0 4px 14px rgba(28, 25, 20, 0.045);
+}
+
+body.light .feature:hover,
+body.light .project-card:hover,
+body.light .contact-link:hover {
+  box-shadow: 0 2px 4px rgba(28, 25, 20, 0.06), 0 8px 22px rgba(28, 25, 20, 0.07);
+}
+
+body.light .topbar {
+  box-shadow: 0 1px 0 rgba(28, 25, 20, 0.06);
+}
+
+/* the glow reads as a smudge on a pale background */
+body.light .status-dot { box-shadow: none; }
+
+/* pale amber on cream was nearly invisible */
+body.light .badge-live {
+  color: var(--amber);
+  background: rgba(138, 90, 17, 0.09);
+  border-color: rgba(138, 90, 17, 0.32);
+}
+
+body.light .chip,
+body.light .tag,
+body.light .capabilities li {
+  background: var(--surface);
+  border-color: rgba(28, 25, 20, 0.12);
+}
+
+body.light .btn-ghost { background: #ffffff; }
+
+body.light .topbar-nav a.active {
+  background: rgba(31, 107, 70, 0.10);
+  color: var(--accent-deep);
+}
 
 /* ---------- Responsive ---------- */
 
